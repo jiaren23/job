@@ -1,0 +1,222 @@
+*{
+    position: relative;  
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color:#000;
+}
+
+
+/* 螢幕大於576*/
+@media (min-width:576px){
+    
+html,body,nav{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+.s-one {
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 25%;
+}
+.s-two {
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 50%;
+}
+.s-three {
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 75%;
+}
+.link{
+    display: inline-block;
+}
+.head-top{
+    top:3%;
+}
+.about{
+    left: 5%;
+    font-size: 30px;
+}
+.exp{
+    left: 7%;
+    font-size: 30px;
+}
+.contact{
+    left: 77%;
+    /* right:-70%; */
+    font-size: 20px;
+   /* vertical-align: right; */
+}
+.head-left{
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    transform: rotate(-90deg);
+}
+.portfolio{
+    font-size: 20px;
+}
+.head-bottom{
+    top:80%;
+}
+.project{
+    left: 8%;
+    font-size: 30px;
+}
+
+.head-right{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    transform: rotate(-90deg);
+}
+
+
+.person{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-18.5%,-54%);
+}
+img{
+    width: 40%;
+    opacity: 0;
+    animation: appear-text 1s linear forwards;
+    animation-delay: 0.8s;
+}
+@keyframes appear-text {
+    0% {
+          opacity: 0;
+    }
+    100% {
+          opacity: 1;
+    }
+}
+.img:after {
+    content: "";
+    top: 0;
+    left: 0;
+    /* width: 0%; */
+    height: 100%;
+    background: #dbdbdb;
+    position: absolute;
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+} 
+@keyframes rev-img {
+    0% {
+          left: 0%;
+          width: 0%;
+    }
+    50% {
+          left: 0;
+          width: 40%;
+    }
+    100% {
+          left: 40%;
+          width: 0%;
+    }
+}
+.intr{
+    position: absolute;
+    display: inline-block;;
+    left:-35%;
+    top:-30%;
+}
+
+.name{
+    position: absolute;
+    display: inline-block;;
+    left:30%;
+    top:30%;
+    font-size: 35px;
+}
+.name h2{
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 2s;
+    margin: 0;
+    padding: 5px;
+}
+
+.name:after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 80%;
+    background: #eee;
+    position: absolute;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.2s;
+}
+@keyframes rev-block {
+    0% {
+          left: 0%;
+          width: 0%;
+    }
+
+    50% {
+          left: 0;
+          width: 100%;
+    }
+
+    100% {
+          left: 100%;
+          width: 0%;
+    }
+}
+nav{
+    display: none !important;
+}
+
+
+}
+
+/*小於576px*/
+@media (max-width:576px){
+
+/* .img{
+    position: absolute;
+    left:90%;
+    width: 100%;
+} */
+img{
+    width: 100%;
+  
+}
+.name,.intr,.head-right{
+    text-align: center;
+}
+
+.head-right{
+    bottom: 0px;
+}
+.fb,.ig{
+    display: inline-block;
+}
+.content{
+    display: none !important;
+}
+
+
+
+}
+
+
+
