@@ -5,15 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="all.css">
     <link href="https://fonts.googleapis.com/css?family=Charm:700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 
+    <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+  <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    
+    <!-- .navbar-brand 左上LOGO位置 -->
+    <a class="navbar-brand" href="index.html">
+      <!-- <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+      <span>WebDesign</span>
+    </a>
+    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+    <!-- 選單項目&漢堡式折疊選單 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- active表示當前頁面 -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exp1.html">Exp</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="exp1.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exp1.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exp1.html">Contact Me</a>
+          </li>
+      </ul>
+    </div>
+    
+  </nav>
 
     <div class="content">
        
@@ -55,3 +98,4 @@
     </div>
 </body>
 </html>
+
