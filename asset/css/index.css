@@ -23,7 +23,9 @@ html,body,nav{
     height: 100vh;
     width: 100%;
     /* background-color: #fff; */
-    background-image: url("https://image.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg");
+    background-image: url("../img/bgc.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .s-one {
     position: absolute;
@@ -187,7 +189,6 @@ img{
 nav{
     display: none !important;
 }
-
 
 }
 
