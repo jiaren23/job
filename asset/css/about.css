@@ -1,0 +1,29 @@
+*{
+    position: relative;  
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color:rgb(116, 108, 108) !important;
+    
+}
+
+
+.bg-dark{
+   
+    background: rgb(226, 220, 220) !important;
+}
+
+
+
+
+
+.nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+
+
