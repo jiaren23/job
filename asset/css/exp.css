@@ -2,8 +2,8 @@
     position: relative;  
     list-style: none;
     text-decoration: none;
-    text-align: center;
-    /* border: solid 1px; */
+    /* text-align: center; */
+    border: solid 1px;
     box-sizing: border-box;
 }
 a{
@@ -38,6 +38,17 @@ img{
    
 }
 
+.skill-h3{
+    text-align: center;
+}
+
+.experience{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
+
 
 @media screen and (min-width:768px){
     /* .col-1 {width: 8.33%;}
@@ -52,6 +63,7 @@ img{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;} */
+
 
     .intr{
         text-align: center;
@@ -74,6 +86,22 @@ img{
         margin: 0 auto;
     }
 
+
+   
+
+    .exp-date{
+       width: 80%;
+        left:20%;
+    }
+    .exp-content{
+        display: inline-block;
+        left:30%;
+         width: 45%;
+    }
+
+    .experience{
+        text-align: initial;
+    }
 
    
 
