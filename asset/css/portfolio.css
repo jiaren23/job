@@ -5,6 +5,7 @@
     text-align: center;
     /* border: solid 1px; */
     box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
 }
 a{
     color:rgb(116, 108, 108) !important;

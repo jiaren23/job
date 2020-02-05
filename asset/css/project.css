@@ -1,24 +1,19 @@
 *{
-    /* border: solid 1px; */
-    text-align: center;
-    font-family: 微軟正黑體;
-    line-height: 1.6;
-    letter-spacing: 0.1em;
-  }
-  
-  html,body{
-    margin: 0;
-    padding: 0;
-    
-  }
-
+  position: relative;  
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Noto Serif TC', serif;
+  box-sizing: border-box;
+  text-align: center;
+}
   a{
     color:rgb(116, 108, 108) !important;
-  }
-  .bg-dark{
+}
+.bg-dark{
    
     background: rgb(226, 220, 220) !important;
-  }
+}
+
   .nav-link {
     padding-right: 0;
     padding-left: 0;

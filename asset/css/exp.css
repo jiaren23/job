@@ -2,8 +2,7 @@
     position: relative;  
     list-style: none;
     text-decoration: none;
-    /* text-align: center; */
-    /* border: solid 1px; */
+    font-family: 'Noto Serif TC', serif;
     box-sizing: border-box;
 }
 a{
