@@ -2,13 +2,12 @@
     position: relative;  
     list-style: none;
     text-decoration: none;
+    font-family: 'Noto Serif TC', serif;
 }
 a{
     color:rgb(116, 108, 108) !important;
     
 }
-
-
 
 /* 螢幕大於576*/
 @media (min-width:576px){
@@ -22,9 +21,9 @@ html,body,nav{
 .content{
     height: 100vh;
     width: 100%;
-    /* background-color: #fff; */
+    background-color: #f3f4f7;
     background-image: url("../img/bgc.jpg");
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size: cover;
 }
 .s-one {
@@ -52,44 +51,53 @@ html,body,nav{
     display: inline-block;
 }
 .head-top{
-    top:3%;
+  
+    top:5%;
 }
 .about{
     left: 5%;
-    font-size: 30px;
+    font-size: 25px;
 }
 .exp{
     left: 7%;
-    font-size: 30px;
+    font-size: 25px;
 }
 .contact{
-    left: 77%;
-    /* right:-70%; */
-    font-size: 20px;
+   position: absolute;
+    /* left: 77%; */
+   right: 5%;
+    font-size: 25px;
    /* vertical-align: right; */
 }
 .head-left{
     position: absolute;
     left: 3%;
-    top: 18%;
+    /* top: 18%; */
+    top:23%;
     transform: rotate(-90deg);
 }
 .portfolio{
     font-size: 20px;
 }
 .head-bottom{
-    top:80%;
+    top:83%;
 }
 .project{
-    left: 8%;
-    font-size: 30px;
+    left: 5%;
+    font-size: 27px;
 }
+
 
 .head-right{
     position: absolute;
-    right: 5%;
-    bottom: 10%;
+    right: 3%;
+    bottom: 13%;
     transform: rotate(-90deg);
+}
+
+.ig{
+   margin-left: 10px;
+   width: 90px;
 }
 
 
@@ -143,6 +151,11 @@ img{
     left:-35%;
     top:-30%;
 }
+.intr h3{
+    color: rgb(77, 73, 73);
+    font-size: 25px;
+    line-height: 1.3;
+}
 
 .name{
     position: absolute;
@@ -157,7 +170,10 @@ img{
     animation-delay: 2s;
     margin: 0;
     padding: 5px;
+    color: rgb(77, 73, 73);
 }
+
+
 
 .name:after{
     content: "";
@@ -202,6 +218,7 @@ img{
 }
 .name,.intr,.head-right{
     text-align: center;
+    
 }
 
 .head-right{
