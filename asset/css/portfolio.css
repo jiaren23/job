@@ -55,7 +55,7 @@ h1{
 
     .web-work{
         display: flex;
-        width: 960px;
+        max-width: 960px;
         margin: auto;
     }
     .web-box{    

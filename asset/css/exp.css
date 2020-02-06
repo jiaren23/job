@@ -18,16 +18,18 @@ a{
     text-align: center;
 }
 img{
-    width: 100%;
+    width: 70%;
     border-radius: 100%;
 }
 .pic{
     display: inline-block;  
 }
 .about{
+    margin: 20px 8px;
     margin: 5px 8px;
 }
 .intr{
+    margin: 20px auto 40px;
     text-align: center;
 }
 .intr a{
@@ -63,7 +65,10 @@ img{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;} */
 
-
+    img{
+        width: 100%;
+        border-radius:100%
+    }
     .intr{
         text-align: center;
         display: flex;
@@ -106,5 +111,12 @@ img{
 
 }
 
+@media screen and (max-width: 768px){
+    section {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
 
 
