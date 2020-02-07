@@ -42,9 +42,15 @@ img{
 .skill-h3{
     text-align: center;
 }
+.experience-group{
+    margin-top: 10px;
+}
 
 .experience{
     text-align: center;
+}
+.exp-content h5{
+    color:#948073;
 }
 .footer{
     text-align: center;
