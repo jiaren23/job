@@ -26,11 +26,11 @@
 
   .project-intr{
     margin-top: 20px;
+    max-width: 100%;
   }
   
-  .intr-img img{
-    width: 70%;
-  }
+  
+  
   
   .newpost{
     margin: 20px auto;
@@ -49,7 +49,11 @@
   }
   
   .pdfs{
-      width: 100%;
+      widows: 960px;;
+  }
+  .pdf1,.pdf2{
+    margin: auto;
+    
   }
   
   
@@ -168,4 +172,9 @@
       padding-left: 10px;
       padding-right: 10px;
     }
+    .yt{
+      max-width: 100%;
+      
+    } 
+
   }
