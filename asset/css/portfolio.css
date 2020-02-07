@@ -3,7 +3,6 @@
     list-style: none;
     text-decoration: none;
     text-align: center;
-    /* border: solid 1px; */
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
 }
@@ -39,6 +38,22 @@ img{
 h1{
     text-align: center;
 }
+
+.web-box-img{
+    margin-bottom: 10px;
+}
+
+.web-box{    
+    padding: 20px;
+    width: 100%;
+    /* height: 200px; */
+    text-align: center;
+    background-color: #eee;
+    margin: 10px auto;
+    border-radius: 10px;
+    }
+
+
 
 .design-work{
     background-color: rgb(224, 224, 224);
@@ -76,7 +91,6 @@ h1{
     .web-box{    
     padding: 20px;
     width: 360px;
-    /* height: 200px; */
     text-align: center;
     background-color: #eee;
     margin: 10px;
@@ -85,6 +99,9 @@ h1{
 
     .web-box .box-img img{
        width: 200px;
+    }
+    .web-box-img{
+        margin-bottom: 10px;
     }
 
     .design-work .design-box{
