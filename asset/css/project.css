@@ -49,7 +49,7 @@
   }
   
   .pdfs{
-      widows: 960px;;
+      display:none;
   }
   .pdf1,.pdf2{
     margin: auto;
@@ -57,10 +57,10 @@
   }
   
   
-  .footer li{
-    display:inline-block;
-    margin: 10px;
-  
+
+ 
+    .footer{
+      margin:50px auto 15px
   }
   
  
@@ -159,6 +159,10 @@
     
       /** Unhide lightbox **/
       display: block;
+    }
+
+    .pdfdownload{
+      display: none;
     }
 
     .footer{
