@@ -3,6 +3,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Noto Serif TC', serif;
+    /* border:1px solid; */
 }
 a{
     color:rgb(116, 108, 108) !important;
@@ -22,7 +23,7 @@ html,body,nav{
     height: 100vh;
     width: 100%;
     background-color: #f3f4f7;
-    background-image: url("../img/bgc.jpg");
+    background-image: url("../img/new_bgc.jpg");
     background-repeat:repeat;
     background-size: cover;
 }
@@ -100,7 +101,9 @@ html,body,nav{
    width: 90px;
 }
 
-
+.intr-mobile{
+    display: none;
+}
 .person{
     position: fixed;
     left: 50%;
@@ -211,24 +214,93 @@ nav{
 /*小於576px*/
 @media (max-width:576px){
 
+    .content{
+        height: 100vh;
+        width: 100%;
+        /* background-color: #f3f4f7; */
+        background-image: url("../img/new_bgc.jpg");
+        background-repeat:repeat;
+        background-size: cover;
+        position: relative;
+    }
 
 img{
     width: 100%;
-  
+    animation: appear-text 1s linear forwards;
+    animation-delay: 0.8s;
 }
+@keyframes appear-text {
+    0% {
+          opacity: 0;
+    }
+    100% {
+          opacity: 1;
+    }
+}
+.img:after {
+    content: "";
+    top: 0;
+    left: 0;
+    /* width: 0%; */
+    height: 100%;
+    background: #dbdbdb;
+    position: absolute;
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+} 
+@keyframes rev-img {
+    0% {
+          left: 0%;
+          width: 0%;
+    }
+    50% {
+          left: 0;
+          width: 100%;
+    }
+    100% {
+          left: 100%;
+          width: 0%;
+    }
+}
+
 .name,.intr,.head-right{
-    text-align: center;
+    text-align: center; 
+}
+.pic{
+    left:30%
+}
+.intr-mobile{
+    position: absolute;
+    left: -40%;
+    top:0;
+}
+.intr h3{
+    display: none;
+}
+.intr-mobile h3{
+    writing-mode: vertical-rl;
+    color: rgb(77, 73, 73);
+}
+.name{
+    margin-top: 10%;
+    left: 30%;
+    color: rgb(77, 73, 73);
+}
+
+.head-top,.head-left,.head-bottom,.head-right{
+    display: none;
+}
+.person{
+    position: absolute;
+    top: 30% !important;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    transform: translateY(-50%);
     
 }
 
-.head-right{
-    bottom: 0px;
-}
+
 .fb,.ig{
     display: inline-block;
-}
-.content{
-    display: none !important;
 }
 
 .bg-dark{
