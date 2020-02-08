@@ -45,6 +45,26 @@ img{
 }
 
 
+
+/* contact arrow */
+.btn .arrow{
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{
+        opacity: 0.5;
+        
+    }
+    50%{
+        opacity: 1;
+        left: 5px;
+    }
+    100%{
+        opacity: 0.5;
+       
+    }
+}
+
 @media screen and (min-width:768px){
     /* .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -88,7 +108,24 @@ img{
         margin: 20px;
     }
 
-
+/* contact arrow */
+.arrow{
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{
+        opacity: 0.5;
+        
+    }
+    50%{
+        opacity: 1;
+        left: 5px;
+    }
+    100%{
+        opacity: 0.5;
+       
+    }
+}
 
     .skills{
         display: flex;

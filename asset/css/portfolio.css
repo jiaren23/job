@@ -34,6 +34,10 @@ img{
     background-repeat: no-repeat;
     background-size:cover;
 }
+h5{
+    color: rgb(78, 74, 74);
+    font-weight: 600;
+}
 
 h3{
     margin: 40px auto;
@@ -48,7 +52,8 @@ h3{
     width: 100%;
     /* height: 200px; */
     text-align: center;
-    background-color: #eee;
+    /* background-color: #eee; */
+    border: solid 1px rgb(199, 193, 193);
     margin: 10px auto;
     border-radius: 10px;
     }
@@ -57,16 +62,36 @@ h3{
 
 .design-work{
     /* background-color: rgb(224, 224, 224); */
-    background-image: url(../../asset/img/bgc.jpg);
+    background-image: url(../../asset/img/new_bgc.jpg);
     width: 100%;
-    margin-top: 20px;
-    padding: 100px;
+    margin:20px auto;
+    padding: 10px 10px 30px;
 }
 .design-box a{
     border: solid 1px #666;
     border-radius: 5px;
     padding: 5px;
 }
+
+/* contact arrow */
+.btn .arrow{
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{
+        opacity: 0.5;
+        
+    }
+    50%{
+        opacity: 1;
+        left: 5px;
+    }
+    100%{
+        opacity: 0.5;
+       
+    }
+}
+
 
 @media screen and (min-width:768px){
     .head{
@@ -92,7 +117,8 @@ h3{
     padding: 20px;
     width: 360px;
     text-align: center;
-    background-color: #eee;
+    /* background-color: #eee; */
+    border: solid 1px rgb(199, 193, 193);
     margin: 10px;
     border-radius: 10px;
     }
@@ -106,14 +132,15 @@ h3{
 
     .design-work .design-box{
         margin: auto;
-     
-        width: 40%;
+        max-width: 960px;;
     }
 
    
     .footer{
         margin:50px auto 15px
     }
+
+    
 }
 
 @media screen and (max-width: 960px){
